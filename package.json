@@ -1,0 +1,16 @@
+{
+  "name": "es6-rocketseat",
+  "version": "1.0.0",
+  "description": "Curso de ECMAScript 6 da Rocketseat",
+  "main": "index.js",
+  "author": "Leandro Vieira",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7"
+  },
+  "scripts": {
+    "dev": "babel ./main.js -o ./bundle.js"
+  }
+}

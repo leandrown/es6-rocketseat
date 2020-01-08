@@ -1,16 +1,13 @@
-const arr = [1, 3, 4, 5, 6];
+// Funcao anonima tradicional
+function soma(a = 3, b = 8) {
+    return a + b;
+}
 
-// Funcao anonima convencional
-const newArr = arr.map(function(item) {
-    return item * 2;
-});
+console.log(soma(1));
+console.log(soma());
 
-// Arrow function - mesmo resultado
-const newArrF = arr.map(item => item * 2);
+// Arrow funcion
+const somaAF = (a = 3, b = 8) => a + b;
 
-console.log(newArr);
-console.log(newArrF);
-
-const teste = () => ({ nome: 'Leandro' });
-
-console.log(teste);
+console.log(somaAF(1));
+console.log(somaAF());

@@ -10,3 +10,7 @@ const newArrF = arr.map(item => item * 2);
 
 console.log(newArr);
 console.log(newArrF);
+
+const teste = () => ({ nome: 'Leandro' });
+
+console.log(teste);

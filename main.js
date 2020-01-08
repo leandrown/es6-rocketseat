@@ -1,13 +1,20 @@
-// Funcao anonima tradicional
-function soma(a = 3, b = 8) {
-    return a + b;
-}
+const usuario = {
+    nome: 'Leandro Vieira',
+    idade: 36,
+    endereco: {
+        cidade: 'Guarulhos',
+        estado: 'SP'
+    }
+};
 
-console.log(soma(1));
-console.log(soma());
+console.log(usuario);
 
-// Arrow funcion
-const somaAF = (a = 3, b = 8) => a + b;
+// Recuperando informações do jeito tradicional
+// const nome = usuario.nome;
+// const idade = usuario.idade;
+// const cidade = usuario.endereco.cidade;
 
-console.log(somaAF(1));
-console.log(somaAF());
+// Recuperando com a Desestruturação de objeto com o ES6
+const { nome, idade, endereco: { cidade }} = usuario;
+
+console.log(usuario);

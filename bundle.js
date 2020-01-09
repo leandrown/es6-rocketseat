@@ -1,13 +1,20 @@
 "use strict";
 
-var arr = [1, 3, 4, 5, 6]; // Funcao anonima convencional
+var usuario = {
+  nome: 'Leandro Vieira',
+  idade: 36,
+  endereco: {
+    cidade: 'Guarulhos',
+    estado: 'SP'
+  }
+};
+console.log(usuario); // Recuperando informações do jeito tradicional
+// const nome = usuario.nome;
+// const idade = usuario.idade;
+// const cidade = usuario.endereco.cidade;
+// Recuperando com a Desestruturação de objeto com o ES6
 
-var newArr = arr.map(function (item) {
-  return item * 2;
-}); // Arrow function - mesmo resultado
-
-var newArrF = arr.map(function (item) {
-  return item * 2;
-});
-console.log(newArr);
-console.log(newArrF);
+var nome = usuario.nome,
+    idade = usuario.idade,
+    cidade = usuario.endereco.cidade;
+console.log(usuario);

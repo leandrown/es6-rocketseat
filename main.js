@@ -1,20 +1,21 @@
+// REST - operador que pega o "resto do objeto"
+
 const usuario = {
-    nome: 'Leandro Vieira',
+    nome: 'Leandro',
     idade: 36,
-    endereco: {
-        cidade: 'Guarulhos',
-        estado: 'SP'
-    }
+    empresa: 'Mandrillus'
 };
 
-console.log(usuario);
+const { nome, ...resto } = usuario;
 
-// Recuperando informações do jeito tradicional
-// const nome = usuario.nome;
-// const idade = usuario.idade;
-// const cidade = usuario.endereco.cidade;
+console.log(nome);
+console.log(resto);
 
-// Recuperando com a Desestruturação de objeto com o ES6
-const { nome, idade, endereco: { cidade }} = usuario;
+// Podemos usar também em um vetor/array
+const arr = [1, 2, 3, 4];
 
-console.log(usuario);
+const [a, b, ...c] = arr;
+
+console.log(a);
+console.log(b);
+console.log(c);

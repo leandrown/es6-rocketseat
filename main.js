@@ -1,17 +1,3 @@
-const nome = "Leandro";
-const idade = 36;
+import { soma } from './functions';
 
-// Declarando o objeto no modo convencional
-const usuario = {
-    nome: nome,
-    idade: idade,
-    empresa: 'Mandrillus'
-};
-
-// Declarando o objeto no modo Object Short Syntax
-const usuarioShort = {
-    nome,
-    idade,
-    empresa: 'Mandrillus'
-};
-
+console.log(soma(1, 2));

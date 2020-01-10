@@ -1,8 +1,17 @@
 const nome = "Leandro";
 const idade = 36;
 
-// Concatenacao tradicional
-console.log('Meu nome é ' + nome + ' e tenho ' + idade + ' anos.');
+// Declarando o objeto no modo convencional
+const usuario = {
+    nome: nome,
+    idade: idade,
+    empresa: 'Mandrillus'
+};
 
-// Usando Template Literals
-console.log(`Meu nome é ${nome} e tenho ${idade} anos.`);
+// Declarando o objeto no modo Object Short Syntax
+const usuarioShort = {
+    nome,
+    idade,
+    empresa: 'Mandrillus'
+};
+
